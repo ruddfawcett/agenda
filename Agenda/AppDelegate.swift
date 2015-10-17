@@ -22,8 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().translucent = false
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [
-            NSForegroundColorAttributeName : UIColor.whiteColor(),
-            NSFontAttributeName : UIFont.boldSystemFontOfSize(20)
+            NSForegroundColorAttributeName : UIColor.whiteColor()
         ]
         
         let navigationController = UINavigationController(rootViewController: AgendaViewController())

@@ -12,14 +12,15 @@ class AgendaViewController: UITableViewController, UIAlertViewDelegate {
     
     let kAgendaCellIdentifier = "AgendaCell"
 
+    let testing: Bool = false
+    
     var items: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "add-button"),
-            style: .Plain, target: self,
-            action: Selector("addItem"))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add,
+            target: self, action: Selector("addItem"))
         
         self.title = "Agenda"
         
@@ -27,6 +28,10 @@ class AgendaViewController: UITableViewController, UIAlertViewDelegate {
         self.tableView.tableFooterView = UIView()
         
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: kAgendaCellIdentifier)
+        
+        if (testing) {
+            addItems()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +40,13 @@ class AgendaViewController: UITableViewController, UIAlertViewDelegate {
     }
     
     // MARK: - Add item logic
+    
+    // So we can test without having to manually add items.
+    func addItems() {
+        for i in 1...10 {
+            self.items.append("Item \(i)")
+        }
+    }
     
     func addItem() {
         let alert = UIAlertController(title: "Add an Item", message: "What would you like to add to your agenda?", preferredStyle: UIAlertControllerStyle.Alert)
