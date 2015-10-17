@@ -15,7 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.backgroundColor = UIColor.whiteColor()
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red:0.19, green:0.6, blue:0.87, alpha:1)
+        UINavigationBar.appearance().translucent = false
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor.whiteColor(),
+            NSFontAttributeName : UIFont.boldSystemFontOfSize(20)
+        ]
+        
+        let navigationController = UINavigationController(rootViewController: AgendaViewController())
+        
+        self.window?.rootViewController = navigationController
+        
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

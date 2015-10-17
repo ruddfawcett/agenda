@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		F131B0B41BD16D8400E8E429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F131B0B31BD16D8400E8E429 /* AppDelegate.swift */; };
-		F131B0B61BD16D8400E8E429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F131B0B51BD16D8400E8E429 /* ViewController.swift */; };
-		F131B0B91BD16D8400E8E429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F131B0B71BD16D8400E8E429 /* Main.storyboard */; };
 		F131B0BB1BD16D8400E8E429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F131B0BA1BD16D8400E8E429 /* Assets.xcassets */; };
 		F131B0BE1BD16D8400E8E429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F131B0BC1BD16D8400E8E429 /* LaunchScreen.storyboard */; };
+		F131B0C61BD17AFE00E8E429 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F131B0C51BD17AFE00E8E429 /* AgendaViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F131B0B01BD16D8400E8E429 /* Agenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F131B0B31BD16D8400E8E429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F131B0B51BD16D8400E8E429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F131B0B81BD16D8400E8E429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F131B0BA1BD16D8400E8E429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F131B0BD1BD16D8400E8E429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F131B0BF1BD16D8400E8E429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F131B0C51BD17AFE00E8E429 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				F131B0B31BD16D8400E8E429 /* AppDelegate.swift */,
-				F131B0B51BD16D8400E8E429 /* ViewController.swift */,
-				F131B0B71BD16D8400E8E429 /* Main.storyboard */,
+				F131B0C51BD17AFE00E8E429 /* AgendaViewController.swift */,
 				F131B0BA1BD16D8400E8E429 /* Assets.xcassets */,
 				F131B0BC1BD16D8400E8E429 /* LaunchScreen.storyboard */,
 				F131B0BF1BD16D8400E8E429 /* Info.plist */,
@@ -123,7 +120,6 @@
 			files = (
 				F131B0BE1BD16D8400E8E429 /* LaunchScreen.storyboard in Resources */,
 				F131B0BB1BD16D8400E8E429 /* Assets.xcassets in Resources */,
-				F131B0B91BD16D8400E8E429 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F131B0B61BD16D8400E8E429 /* ViewController.swift in Sources */,
+				F131B0C61BD17AFE00E8E429 /* AgendaViewController.swift in Sources */,
 				F131B0B41BD16D8400E8E429 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,14 +138,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F131B0B71BD16D8400E8E429 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F131B0B81BD16D8400E8E429 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F131B0BC1BD16D8400E8E429 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
